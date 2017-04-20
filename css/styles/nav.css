@@ -1,0 +1,193 @@
+.header-nav {
+  width: 100%;
+  height: 3em; }
+
+nav {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  height: 3em; }
+
+.nav-inner {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .nav-inner img {
+    height: 3em;
+    margin-right: 5%;
+    cursor: pointer;
+    z-index: 9999; }
+
+.nav-menu {
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .nav-menu a {
+    margin-right: 25px;
+    text-shadow: #0c1f2d 1px 0 15px;
+    color: #F3FFE2;
+    text-decoration: none; }
+    .nav-menu a:hover {
+      color: #EB7F00;
+      -khtml-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      transition: all 0.3s; }
+  .nav-menu a:last-of-type {
+    margin-right: 0; }
+
+.nav-contact-button {
+  float: right;
+  height: 2em;
+  z-index: 6666;
+  display: table;
+  background-color: orange;
+  background-color: #EB7F00;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffa439), to(#EB7F00));
+  background-image: -webkit-linear-gradient(top, #ffa439, #EB7F00);
+  background-image: -moz-linear-gradient(top, #ffa439, #EB7F00);
+  background-image: -ms-linear-gradient(top, #ffa439, #EB7F00);
+  background-image: -o-linear-gradient(top, #ffa439, #EB7F00);
+  background-image: linear-gradient(to bottom, #ffa439, #EB7F00);
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.2s;
+  box-shadow: 0 2px 5px 0 #0c1f2d;
+  padding: 0 1em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  border-radius: 0.5em; }
+
+.nav-contact-button-align {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #F3FFE2; }
+  .nav-contact-button-align i {
+    color: #F3FFE2; }
+
+.nav-screen {
+  display: none; }
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  background-color: #225378;
+  background-color: rgba(12, 31, 45, 0.95);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-image: url("../../images/stripe.png"); }
+
+.overlay .closebtn {
+  position: absolute;
+  top: 4%;
+  right: 5%;
+  font-size: 60px; }
+  .overlay .closebtn i {
+    color: #EB7F00; }
+
+.overlay .title {
+  position: absolute;
+  top: 4.75%;
+  left: 5%;
+  color: #F3FFE2;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer; }
+
+.overlay-content {
+  position: relative;
+  top: 8em;
+  width: 100%;
+  padding: 0 5%; }
+
+.overlay-content-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.overlay-content-cell {
+  width: 32%;
+  margin-bottom: 2%;
+  margin-bottom: 2vw; }
+
+.overlay-content-cell-inner {
+  width: 100%;
+  height: 100%;
+  background-color: #F3FFE2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  border-radius: 1em;
+  padding: 2em .25em; }
+  .overlay-content-cell-inner img {
+    height: 4em;
+    margin-bottom: .5em; }
+
+@media screen and (max-width: 475px) {
+  .overlay-content-cell {
+    width: 49%; }
+
+  .overlay-content-cell-inner {
+    padding: 1em .25em; }
+    .overlay-content-cell-inner img {
+      height: 3em; } }
+@media screen and (min-width: 800px) {
+  .overlay-content {
+    padding: 0 10%; } }
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px; }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px; }
+
+  .overlay-content {
+    top: 5em; }
+
+  .overlay .title {
+    top: 20px;
+    margin-top: 0; }
+
+  .overlay-content-cell-inner img {
+    height: 2.5em; } }
+
+/*# sourceMappingURL=nav.css.map */
